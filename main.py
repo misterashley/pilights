@@ -8,8 +8,6 @@ led_state = []
 for x in range(0,number_of_leds):
     led_state.append(led)
 
-
-
 def random_colour():
     return [random.randrange(0,256),random.randrange(0,256),random.randrange(0,256)]
 
@@ -19,7 +17,6 @@ def mix():
     for i in range(0,number_of_leds):
         led_state.append(random_colour())
     push_state()
-        
     
 def leds_off():
     set_leds(0,0,0)
@@ -91,7 +88,6 @@ def xmas():
 def sparkle(): pass
 ##    choose a light
 ##    turn on the light full blast, and soon after diminish until low light level
-
 
 def init_led():
     r=0
